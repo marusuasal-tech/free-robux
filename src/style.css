@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Roblox Font decorative";
+  src: url("assets/RobloxFont.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roblox Font plain";
+  src: url("assets/BuilderSans-Thin-100.otf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roblox Font plain";
+  src: url("assets/BuilderSans-Light-300.otf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roblox Font plain";
+  src: url("assets/BuilderSans-Regular-400.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roblox Font plain";
+  src: url("assets/BuilderSans-Medium-500.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roblox Font plain";
+  src: url("assets/BuilderSans-SemiBold-600.otf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roblox Font plain";
+  src: url("assets/BuilderSans-Bold-700.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roblox Font plain";
+  src: url("assets/BuilderSans-ExtraBold-800.otf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+* {
+  user-select: none;
+  -webkit-user-drag: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roblox Font plain", sans-serif;
+  color: #202227;
+  background: white;
+}
+
+header {
+  -webkit-app-region: drag;
+  font-family: "Roblox Font decorative", sans-serif;
+  background: #edeef1;
+  padding: 10px 10px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header div {
+  margin-top: 10px;
+}
+
+header div img {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header div h1 {
+  margin: 0 15px;
+  font-size: 40px;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header button {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: 5px solid #202227;
+  border-radius: 2px;
+  -webkit-app-region: no-drag;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header button img {
+  width: 30px;
+  height: 30px;
+}
+
+main {
+  padding: 20px 50px;
+}
+
+.buy_robux {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 13px 0;
+}
+
+.buy_robux button {
+  font-size: 30px;
+  font-weight: 500;
+  background: none;
+  border: 2.5px solid #202227;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 41px 1fr;
+  align-items: center;
+  padding: 2.5px 4.5px;
+  width: 200px;
+}
+
+.buy_robux img {
+  width: 34px;
+  height: 37px;
+}
+
+.buy_robux div {
+  align-self: flex-start;
+  display: flex;
+  gap: 5px;
+}
+
+h2.current_price {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+h3.past_price {
+  font-size: 20px;
+  font-weight: 400;
+  color: #808080;
+  text-decoration: line-through;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 100px 10px 100px;
+  background: #edeef1;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+}

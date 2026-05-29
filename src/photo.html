@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="photo" alt="death screen" />
+
+    <script>
+      if (window.electronAPI && window.electronAPI.onLoadPhoto) {
+        window.electronAPI.onLoadPhoto((photoPath) => {
+          const img = document.getElementById("photo");
+          img.src = photoPath;
+        });
+      }
+    </script>
+  </body>
+</html>
