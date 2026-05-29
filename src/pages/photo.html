@@ -8,6 +8,7 @@
       * {
         margin: 0;
         padding: 0;
+        -webkit-user-drag: none;
       }
 
       body {
@@ -24,15 +25,10 @@
     </style>
   </head>
   <body>
-    <img id="photo" alt="death screen" />
-
-    <script>
-      if (window.electronAPI && window.electronAPI.onLoadPhoto) {
-        window.electronAPI.onLoadPhoto((photoPath) => {
-          const img = document.getElementById("photo");
-          img.src = photoPath;
-        });
-      }
-    </script>
+    <img
+      id="photo"
+      alt="death screen"
+      src="../assets/images/death_screen.png"
+    />
   </body>
 </html>

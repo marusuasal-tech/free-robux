@@ -1,55 +1,55 @@
 @font-face {
   font-family: "Roblox Font decorative";
-  src: url("assets/RobloxFont.ttf") format("truetype");
+  src: url("../assets/fonts/RobloxFont.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roblox Font plain";
-  src: url("assets/BuilderSans-Thin-100.otf") format("truetype");
+  src: url("../assets/fonts/BuilderSans-Thin-100.otf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roblox Font plain";
-  src: url("assets/BuilderSans-Light-300.otf") format("truetype");
+  src: url("../assets/fonts/BuilderSans-Light-300.otf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roblox Font plain";
-  src: url("assets/BuilderSans-Regular-400.otf") format("truetype");
+  src: url("../assets/fonts/BuilderSans-Regular-400.otf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roblox Font plain";
-  src: url("assets/BuilderSans-Medium-500.otf") format("truetype");
+  src: url("../assets/fonts/BuilderSans-Medium-500.otf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roblox Font plain";
-  src: url("assets/BuilderSans-SemiBold-600.otf") format("truetype");
+  src: url("../assets/fonts/BuilderSans-SemiBold-600.otf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roblox Font plain";
-  src: url("assets/BuilderSans-Bold-700.otf") format("truetype");
+  src: url("../assets/fonts/BuilderSans-Bold-700.otf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roblox Font plain";
-  src: url("assets/BuilderSans-ExtraBold-800.otf") format("truetype");
+  src: url("../assets/fonts/BuilderSans-ExtraBold-800.otf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }

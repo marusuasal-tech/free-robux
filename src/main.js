@@ -5,12 +5,10 @@ const {
   ipcMain,
   dialog,
 } = require("electron");
-// const { exec } = require("child_process");
 const path = require("node:path");
 const appIcon = nativeImage.createFromPath(
-  path.join(__dirname, "assets/icon.png"),
+  path.join(__dirname, "assets", "images", "icon.png"),
 );
-const photoPath = path.join(__dirname, "assets/death_screen.png");
 
 if (require("electron-squirrel-startup")) {
   app.quit();
@@ -48,8 +46,6 @@ ipcMain.on("trigger-prank", () => {
   clickCount++;
 
   if (clickCount > 3) {
-    // const photoPath = path.join(__dirname, "assets/death_screen.png");
-    // exec(`start "" "${photoPath}"`);
     if (photoWindow && !photoWindow.isDestroyed()) {
       photoWindow.close();
     }
@@ -65,11 +61,8 @@ ipcMain.on("trigger-prank", () => {
         preload: path.join(__dirname, "preload.js"),
       },
     });
-    photoWindow.loadFile(path.join(__dirname, "photo.html"));
 
-    photoWindow.webContents.on("did-finish-load", () => {
-      photoWindow.webContents.send("load-photo", photoPath);
-    });
+    photoWindow.loadFile(path.join(__dirname, "pages", "photo.html"));
   } else {
     dialog.showErrorBox("Oops!", "System file was deleted…");
   }
